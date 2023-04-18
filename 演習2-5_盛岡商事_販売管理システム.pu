@@ -1,0 +1,11 @@
+@startuml ユースケース図
+left to right direction
+actor 出荷担当者1
+actor 出荷担当者2
+rectangle 販売管理システム {
+usecase 注文をシステムで確認
+usecase 出荷状況をシステムに登録
+}
+出荷担当者1 --> 注文をシステムで確認
+出荷担当者2 --> 出荷状況をシステムに登録
+@endumlc
