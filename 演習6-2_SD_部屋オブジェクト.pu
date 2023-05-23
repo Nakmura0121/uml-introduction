@@ -1,0 +1,15 @@
+@startuml 部屋オブジェクト
+' left to right direction
+state 未使用{
+    state entry <<entryPoint>>
+    state exit <<exitPoint>>
+    空室 -right-> 予約済 : 予約
+    予約済 -left-> 空室 : キャンセル
+}
+使用中 --> 空室 : 使用終了
+予約済 -down-> 使用中 : 使用
+[*] --> entry
+entry --> 空室
+空室 -up-> exit
+exit -down-> [*]
+@enduml
