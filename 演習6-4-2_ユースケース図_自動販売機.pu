@@ -1,0 +1,14 @@
+@startuml 自動販売機
+left to right direction
+actor 客 
+actor ベンダー 
+rectangle 自動販売機 {
+    usecase ボタン 
+    usecase 料金装置 
+    usecase ベンダー装置 
+}
+客 --> ボタン
+客 --> 料金装置
+客 --> ベンダー装置
+料金装置 <-- ベンダー
+@enduml
