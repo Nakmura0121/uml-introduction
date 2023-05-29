@@ -1,4 +1,4 @@
-@startuml 演習６－４－３
+@startuml 自動販売機
 hide footbox
 actor "<u>:客</u>" as customer
 participant ":料金装置" as price
